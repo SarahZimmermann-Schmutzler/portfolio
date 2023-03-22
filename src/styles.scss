@@ -41,9 +41,29 @@
          url('../src/assets/fonts/poppins/poppins-v20-latin-700.svg#Poppins') format('svg'); /* Legacy iOS */
   }
 
+  /* kalam-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Kalam';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../src/assets/fonts/kalam/kalam-v16-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('../src/assets/fonts/kalam/kalam-v16-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../src/assets/fonts/kalam/kalam-v16-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../src/assets/fonts/kalam/kalam-v16-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../src/assets/fonts/kalam/kalam-v16-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../src/assets/fonts/kalam/kalam-v16-latin-regular.svg#Kalam') format('svg'); /* Legacy iOS */
+}
+
 // main scss
 
 body {
     margin: 0;
     font-family: 'Poppins';
+}
+
+h2 {
+  font-size: 54px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
 }
