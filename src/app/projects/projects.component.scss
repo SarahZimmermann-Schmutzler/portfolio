@@ -49,11 +49,13 @@
 .btn-container {
     display: flex;
     margin-top: 20px;
+    height: 80px;
 
     button {
         background-color: rgba(254, 227, 131, 1);
         color: rgba(0, 0, 0, 0.6);
         width: 200px;
+        height: 70px;
         border: none;
         padding: 20px;
         font-size: 24px;
