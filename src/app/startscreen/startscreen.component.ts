@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./startscreen.component.scss']
 })
 export class StartscreenComponent {
-
+  toContact() {
+    window.location.href='#contact';
+  }
 }
