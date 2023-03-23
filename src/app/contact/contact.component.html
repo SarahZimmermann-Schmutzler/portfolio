@@ -5,14 +5,14 @@
     </div>
 
     <div class="form-container">
-        <form>
+        <form (submit)="sendMail()" #myForm ngNativeValidate>
             <span>Name</span>
-            <input>
+            <input type="text" name="name" required #nameField>
             <span>Email</span>
-            <input>
+            <input type="email" name="email" required #mailField>
             <span>Message</span>
-            <textarea></textarea>
-            <button>LET'S GET STARTED</button>
+            <textarea type="text" name="message" required #messageField></textarea>
+            <button #sendBtn>LET'S GET STARTED</button>
         </form>
     </div>
 </div>
