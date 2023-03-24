@@ -13,6 +13,7 @@ export class ContactComponent {
   @ViewChild('sendBtn') sendBtn!: ElementRef;
 
   async sendMail() {
+    console.log('Sending mail', this.myForm);
     // holen uns die Elemente
     // this.nameField.nativeElement = getElementById
     let nameField = this.nameField.nativeElement;
