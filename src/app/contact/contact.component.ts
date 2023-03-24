@@ -12,43 +12,68 @@ export class ContactComponent {
   @ViewChild('messageField') messageField!: ElementRef;
   @ViewChild('sendBtn') sendBtn!: ElementRef;
 
-  async sendMail() {
-    console.log('Sending mail', this.myForm);
-    // holen uns die Elemente
-    // this.nameField.nativeElement = getElementById
-    let nameField = this.nameField.nativeElement;
-    let mailField = this.mailField.nativeElement;
-    let messageField = this.messageField.nativeElement;
-    let sendBtn = this.sendBtn.nativeElement;
 
-    // disablen solange Sendevorgang
-    nameField.disabled = true;
-    mailField.disabled = true;
-    messageField.disabled = true;
-    sendBtn.disabled = true;
+  // async sendMail() {
+  //   console.log('Sending mail', this.myForm);
+  //   // holen uns die Elemente
+  //   // this.nameField.nativeElement = getElementById
+  //   let nameField = this.nameField.nativeElement;
+  //   let mailField = this.mailField.nativeElement;
+  //   let messageField = this.messageField.nativeElement;
+  //   let sendBtn = this.sendBtn.nativeElement;
 
-    // Animation anzeigen, dass gerade gesendet wird
+  //   // disablen solange Sendevorgang
+  //   nameField.disabled = true;
+  //   mailField.disabled = true;
+  //   messageField.disabled = true;
+  //   sendBtn.disabled = true;
 
-    // bereiten Daten vor, die wir senden wollen
-    let formData = new FormData();
-    formData.append('name', nameField.value);
-    formData.append('email', mailField.value);
-    formData.append('message', messageField.value);
 
-    // senden Daten per Post request an folgende URL
-    await fetch('https://sarah-zimmermann-schmutzler.developerakademie.net/send_mail_portfolio/send_mail.php'),
-    {
-      method: 'POST',
-      body: formData
-    };
+  //   // Animation anzeigen, dass gerade gesendet wird
 
-    // Nachricht anzeigen, dass gesendet
-    
-    // aktivieren nach Senden
-    nameField.disabled = false;
-    mailField.disabled = false;
-    messageField.disabled = false;
-    sendBtn.disabled = false;
+  //   // bereiten Daten vor, die wir senden wollen
+  //   let formData = new FormData();
+  //   formData.append('name', nameField.value);
+  //   formData.append('email', mailField.value);
+  //   formData.append('message', messageField.value);
 
+  //   // senden Daten per Post request an folgende URL
+  //   await fetch('https://sarah-zimmermann-schmutzler.developerakademie.net/send_mail_portfolio/send_mail.php'),
+  //   {
+  //     method: 'POST',
+  //     body: formData
+  //   };
+
+  //   // Nachricht anzeigen, dass gesendet
+
+  //   // aktivieren nach Senden
+  //   nameField.disabled = false;
+  //   mailField.disabled = false;
+  //   messageField.disabled = false;
+  //   sendBtn.disabled = false;
+
+  // }
+
+    async sendMail() {
+    try {
+      let nameField = this.nameField.nativeElement;
+      let mailField = this.mailField.nativeElement;
+      let messageField = this.messageField.nativeElement;
+      let sendBtn = this.sendBtn.nativeElement;
+      let formData = new FormData();
+      formData.append('name', nameField.value);
+      formData.append('email', mailField.value);
+      formData.append('message', messageField.value);
+
+      // senden Daten per Post request an folgende URL
+      let response = await fetch('https://sarah-zimmermann-schmutzler.developerakademie.net/send_mail_portfolio/send_mail.php',
+        {
+          method: 'POST',
+          body: formData
+        })
+      if (!response.ok)
+        throw response;
+    } catch (error) { console.log(error) }
   }
+
 }

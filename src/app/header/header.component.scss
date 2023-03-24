@@ -7,6 +7,10 @@
     background-color: rgba(246, 246, 246, 1);
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 1420px) {
+        height: 650px;
+    }
 }
 
 .menu-container {
@@ -39,11 +43,18 @@
     display: flex;
     justify-content: space-between;
     // background-color: aqua;
+
+    @media (max-width: 1420px) {
+        margin-top: 114px;
+    }
 }
 
 .placeholder {
     width: 35%;
     // background-color: red;
+    @media (max-width: 1420px) {
+        width: 40%;
+    }
 }
 
 .img-container {
@@ -51,9 +62,21 @@
     height: 578px;
     display: flex;
     justify-content: flex-end;
+    // background-color: aqua;
+
+    @media (max-width: 1420px) {
+        width: 60%;
+        height: 450px;
+    }
 
     img {
         height: 100%;
         object-fit: contain;
+
+        @media (max-width: 1420px) {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
     }
 }
