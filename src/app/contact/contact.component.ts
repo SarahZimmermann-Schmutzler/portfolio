@@ -54,26 +54,45 @@ export class ContactComponent {
 
   // }
 
-    async sendMail() {
-    try {
-      let nameField = this.nameField.nativeElement;
-      let mailField = this.mailField.nativeElement;
-      let messageField = this.messageField.nativeElement;
-      let sendBtn = this.sendBtn.nativeElement;
-      let formData = new FormData();
-      formData.append('name', nameField.value);
-      formData.append('email', mailField.value);
-      formData.append('message', messageField.value);
+  async sendMail() {
+    let nameField = this.nameField.nativeElement;
+    let mailField = this.mailField.nativeElement;
+    let messageField = this.messageField.nativeElement;
 
-      // senden Daten per Post request an folgende URL
-      let response = await fetch('https://sarah-zimmermann-schmutzler.developerakademie.net/send_mail_portfolio/send_mail.php',
-        {
-          method: 'POST',
-          body: formData
-        })
-      if (!response.ok)
-        throw response;
-    } catch (error) { console.log(error) }
+    // bereiten Daten vor, die wir senden wollen
+    let formData = new FormData();
+    formData.append('name', nameField.value);
+    formData.append('email', mailField.value);
+    formData.append('message', messageField.value);
+
+    // senden Daten per Post request an folgende URL
+    await fetch('https://sarah-zimmermann-schmutzler.developerakademie.net/send_mail_portfolio/send_mail.php'),
+    {
+      method: 'POST',
+      body: formData
+    };
   }
+
+  //   async sendMail() {
+  //   try {
+  //     let nameField = this.nameField.nativeElement;
+  //     let mailField = this.mailField.nativeElement;
+  //     let messageField = this.messageField.nativeElement;
+  //     let sendBtn = this.sendBtn.nativeElement;
+  //     let formData = new FormData();
+  //     formData.append('name', nameField.value);
+  //     formData.append('email', mailField.value);
+  //     formData.append('message', messageField.value);
+
+  //     // senden Daten per Post request an folgende URL
+  //     let response = await fetch('https://sarah-zimmermann-schmutzler.developerakademie.net/send_mail_portfolio/send_mail.php',
+  //       {
+  //         method: 'POST',
+  //         body: formData
+  //       })
+  //     if (!response.ok)
+  //       throw response;
+  //   } catch (error) { console.log(error) }
+  // }
 
 }
