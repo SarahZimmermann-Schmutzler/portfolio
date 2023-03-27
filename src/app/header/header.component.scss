@@ -13,9 +13,14 @@
     }
 }
 
+
+
 .menu-container {
     margin-top: 60.5px;
     padding-left: 65px;
+    padding-right: 115px;
+    display: flex;
+    justify-content: space-between;
 
     a {
         text-decoration: none;
@@ -34,6 +39,13 @@
         &:visited {
             color: black;
         }
+    }
+    
+}
+
+.language {
+    a {
+        padding-left: 25px !important;
     }
 }
 
