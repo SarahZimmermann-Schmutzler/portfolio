@@ -1,14 +1,14 @@
 <div class="header-container">
     <div class="menu-container">
         <div>
-            <a href="#about">ABOUT</a>
-            <a href="#skills">SKILLS</a>
-            <a href="#projects">PROJECTS</a>
+            <a href="#about" translate>ABOUT</a>
+            <a href="#skills" translate>SKILLS</a>
+            <a href="#projects" translate>PROJECTS</a>
         </div>
 
         <div class="language">
-            <a>DE</a>
-            <a>EN</a>
+            <a (click)="translation.use('de')">DE</a>
+            <a (click)="translation.use('en')">EN</a>
         </div>
 
     </div>

@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './mainpage.component.html',
   styleUrls: ['./mainpage.component.scss']
 })
-export class MainpageComponent {
 
-}
+export class MainpageComponent {}
+
+

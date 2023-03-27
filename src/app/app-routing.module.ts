@@ -4,6 +4,7 @@ import { DataProtectionComponent } from './data-protection/data-protection.compo
 import { ImprintComponent } from './imprint/imprint.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 
+
 const routes: Routes = [
   { path: '', component:MainpageComponent},
   { path: 'imprint', component: ImprintComponent },
@@ -14,4 +15,6 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule { 
+  
+}
