@@ -25,6 +25,7 @@
     padding-right: 115px;
     display: flex;
     justify-content: space-between;
+    z-index: 2;
 
     a {
         text-decoration: none;
@@ -32,6 +33,10 @@
         letter-spacing: 6.33px;
         padding-left: 66px;
         cursor: pointer;
+
+        @media (max-width: 1280px) {
+            padding-left: 45px;
+        }
 
         &:hover {
             color: rgba(254, 227, 131, 1) !important;
@@ -49,7 +54,20 @@
 
 .language {
     a {
-        padding-left: 25px !important;
+        padding-left: 10px !important;
+
+        @media (max-width: 1280px) {
+            font-size: 14px;
+            padding-left: 8px;
+        }
+    }
+
+    span {
+        padding-left: 8px;
+
+        @media (max-width: 1280px) {
+            padding-left: 5px;
+        }
     }
 }
 
@@ -83,6 +101,10 @@
     @media (max-width: 1420px) {
         width: 60%;
         height: 450px;
+    }
+
+    @media (max-width: 1280px) {
+        height: 400px;
     }
 
     img {

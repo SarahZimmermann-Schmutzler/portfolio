@@ -1,6 +1,10 @@
 .title-container {
     padding-left: 115px;
-    margin-top: 150px;
+    margin-top: 155px;
+
+    @media (max-width: 1280px) {
+        margin-top: 80px;
+    }
 
     h2 {
         margin-top: 0;
