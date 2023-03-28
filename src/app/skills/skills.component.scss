@@ -32,28 +32,28 @@
                 font-size: 14px;
             }
 
-            @media (max-width: 1020px) {
-                display: none;
-            }
+            // @media (max-width: 1020px) {
+            //     display: none;
+            // }
         }
     }
 }
 
-.subtitle {
-    display: none;
-    padding-left: 115px;
-    padding-right: 115px;
-    margin-top: -50px;
-    margin-bottom: 70px;
-    font-weight: 400;
-    letter-spacing: 0.4px;
-    color:rgba(109, 109, 109, 1);
-    font-size: 14px;
+// .subtitle {
+//     display: none;
+//     padding-left: 115px;
+//     padding-right: 115px;
+//     margin-top: -50px;
+//     margin-bottom: 70px;
+//     font-weight: 400;
+//     letter-spacing: 0.4px;
+//     color:rgba(109, 109, 109, 1);
+//     font-size: 14px;
 
-    @media (max-width: 1020px) {
-        display: block;
-    }
-}
+//     @media (max-width: 1020px) {
+//         display: block;
+//     }
+// }
 
 .skills-container {
     margin-top: 60px;
@@ -191,44 +191,44 @@
         padding-right: 110px;
     }
 
-    @media (max-width: 1070px) {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
+    // @media (max-width: 1070px) {
+    //     padding-left: 100px;
+    //     padding-right: 100px;
+    // }
 
-    @media (max-width: 1050px) {
-        padding-left: 180px;
-        padding-right: 180px;
-    }
+    // @media (max-width: 1050px) {
+    //     padding-left: 180px;
+    //     padding-right: 180px;
+    // }
 
-    @media (max-width: 960px) {
-        padding-left: 170px;
-        padding-right: 170px;
-    }
+    // @media (max-width: 960px) {
+    //     padding-left: 170px;
+    //     padding-right: 170px;
+    // }
 
-    @media (max-width: 940px) {
-        padding-left: 160px;
-        padding-right: 160px;
-    }
+    // @media (max-width: 940px) {
+    //     padding-left: 160px;
+    //     padding-right: 160px;
+    // }
 
-    @media (max-width: 920px) {
-        padding-left: 150px;
-        padding-right: 150px;
-    }
+    // @media (max-width: 920px) {
+    //     padding-left: 150px;
+    //     padding-right: 150px;
+    // }
 
-    @media (max-width: 900px) {
-        padding-left: 140px;
-        padding-right: 140px;
-        margin-top: 50px;
-    }
+    // @media (max-width: 900px) {
+    //     padding-left: 140px;
+    //     padding-right: 140px;
+    //     margin-top: 50px;
+    // }
 
-    @media (max-width: 880px) {
-        padding-left: 130px;
-        padding-right: 130px;
-    }
+    // @media (max-width: 880px) {
+    //     padding-left: 130px;
+    //     padding-right: 130px;
+    // }
 
-    @media (max-width: 860px) {
-        padding-left: 75px;
-        padding-right: 75px;
-    }
+    // @media (max-width: 860px) {
+    //     padding-left: 75px;
+    //     padding-right: 75px;
+    // }
 }
