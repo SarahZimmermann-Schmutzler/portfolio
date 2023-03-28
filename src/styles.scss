@@ -94,3 +94,15 @@ h2 {
   font-weight: 700;
   color: rgba(0, 0, 0, 1);
 }
+
+@media (max-width: 1089px) {
+  .hide-desktop {
+      display: none;
+  }
+}
+
+@media (min-width: 1090px) {
+  .hide-mobile {
+      display: none;
+  }
+}
