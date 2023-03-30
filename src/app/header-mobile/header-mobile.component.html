@@ -14,9 +14,15 @@
     </div>
 
     <div class="link-container">
-        <a href="#about-mobile" translate>ABOUT</a>
-        <a href="#skills-mobile" translate>SKILLS</a>
-        <a href="#projects-mobile" translate>PROJECTS</a>
-        <a href="#contact-mobile" translate>CONTACT</a>
+        <span (click)="showAbout()" translate>ABOUT</span>
+        <span (click)="showSkills()" translate>SKILLS</span>
+        <span (click)="showProjects()" translate>PROJECTS</span>
+        <span (click)="showContact()" translate>CONTACT</span>
+    </div>
+
+    <div class="language">
+        <a (click)="translation.use('de')">DE</a>
+        <span>|</span>
+        <a (click)="translation.use('en')">EN</a>
     </div>
 </div>
