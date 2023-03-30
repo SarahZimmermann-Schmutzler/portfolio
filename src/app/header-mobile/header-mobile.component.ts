@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header-mobile',
@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./header-mobile.component.scss']
 })
 export class HeaderMobileComponent {
+  @Input() openMenu = false;
 
+  showMenu() {
+    this.openMenu = true;
+  }
+
+  closeMenu() {
+    this.openMenu = false;
+  }
 }

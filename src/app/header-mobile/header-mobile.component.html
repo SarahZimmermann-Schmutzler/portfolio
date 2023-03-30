@@ -1,13 +1,19 @@
 <div class="header-container">
-    <img src="assets/img/icon.png">
+    <img src="assets/img/icon.png" (click)="showMenu()">
+    <!-- setzt Variable openMenu auf true -->
 </div>
 
-<div class="menu-container">
+<div class="menu-container" [class.show-overlay-menu]="openMenu">
+<!-- zeigt die classe nur an, wenn Variable openMenu = true -->
     <div class="close-container">
-        <span>X</span>
+        <img src="assets/img/logo.png">
+        <div>
+            <span (click)="closeMenu()">X</span>
+            <!-- setzt Variable openMenu wieder auf false -->
+        </div>
     </div>
 
-    <div>
+    <div class="link-container">
         <a href="#about-mobile" translate>ABOUT</a>
         <a href="#skills-mobile" translate>SKILLS</a>
         <a href="#projects-mobile" translate>PROJECTS</a>
