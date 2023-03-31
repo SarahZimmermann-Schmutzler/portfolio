@@ -13,6 +13,82 @@ export class ContactComponent {
   @ViewChild('sendBtn') sendBtn!: ElementRef;
 
 
+async sendMail() {
+    let nameField = this.nameField.nativeElement;
+    let mailField = this.mailField.nativeElement;
+    let messageField = this.messageField.nativeElement;
+    let sendBtn = this.sendBtn.nativeElement;
+
+    this.disableBtn(nameField, mailField, messageField, sendBtn);
+
+    let formData = new FormData();
+    formData.append('name', nameField.value);
+    formData.append('email', mailField.value);
+    formData.append('message', messageField.value);
+
+    try {
+      // senden Daten per Post request an folgende URL
+      let response = await fetch('https://sarah-zimmermann-schmutzler.developerakademie.net/send_mail_portfolio/send_mail.php',
+        {
+          method: 'POST',
+          body: formData
+        })
+      if (!response.ok)
+        throw response;
+    } catch (error) { console.log(error) }
+
+    this.mailDelivered();
+
+    this.activateBtn(nameField, mailField, messageField, sendBtn);
+  }
+
+  disableBtn(nameField: any, mailField: any, messageField: any, sendBtn:any) {
+    nameField.disable = true;
+    mailField.disable = true;
+    messageField.disable = true;
+    sendBtn.disable = true;
+  }
+
+  activateBtn(nameField: any, mailField: any, messageField: any, sendBtn:any) {
+    nameField.disabled = false;
+    nameField.value = '';
+    mailField.disabled = false;
+    mailField.value = '';
+    messageField.disabled = false;
+    messageField.value = '';
+    sendBtn.disabled = false;
+  }
+
+  mailDelivered() {
+    alert('Mail delivered!');
+  }
+  
+// Mihails try and catch funktion
+  // async sendMail() {
+  //   let nameField = this.nameField.nativeElement;
+  //   let mailField = this.mailField.nativeElement;
+  //   let messageField = this.messageField.nativeElement;
+  //   let sendBtn = this.sendBtn.nativeElement;
+
+  //   let formData = new FormData();
+  //   formData.append('name', nameField.value);
+  //   formData.append('email', mailField.value);
+  //   formData.append('message', messageField.value);
+
+  //   try {
+  //     // senden Daten per Post request an folgende URL
+  //     let response = await fetch('https://sarah-zimmermann-schmutzler.developerakademie.net/send_mail_portfolio/send_mail.php',
+  //       {
+  //         method: 'POST',
+  //         body: formData
+  //       })
+  //     if (!response.ok)
+  //       throw response;
+  //   } catch (error) { console.log(error) }
+  // }
+
+
+  // Funktion von Junus
   // async sendMail() {
   //   console.log('Sending mail', this.myForm);
   //   // holen uns die Elemente
@@ -52,47 +128,6 @@ export class ContactComponent {
   //   messageField.disabled = false;
   //   sendBtn.disabled = false;
 
-  // }
-
-  async sendMail() {
-    let nameField = this.nameField.nativeElement;
-    let mailField = this.mailField.nativeElement;
-    let messageField = this.messageField.nativeElement;
-
-    // bereiten Daten vor, die wir senden wollen
-    let formData = new FormData();
-    formData.append('name', nameField.value);
-    formData.append('email', mailField.value);
-    formData.append('message', messageField.value);
-
-    // senden Daten per Post request an folgende URL
-    await fetch('https://sarah-zimmermann-schmutzler.developerakademie.net/send_mail_portfolio/send_mail.php'),
-    {
-      method: 'POST',
-      body: formData
-    };
-  }
-
-  //   async sendMail() {
-  //   try {
-  //     let nameField = this.nameField.nativeElement;
-  //     let mailField = this.mailField.nativeElement;
-  //     let messageField = this.messageField.nativeElement;
-  //     let sendBtn = this.sendBtn.nativeElement;
-  //     let formData = new FormData();
-  //     formData.append('name', nameField.value);
-  //     formData.append('email', mailField.value);
-  //     formData.append('message', messageField.value);
-
-  //     // senden Daten per Post request an folgende URL
-  //     let response = await fetch('https://sarah-zimmermann-schmutzler.developerakademie.net/send_mail_portfolio/send_mail.php',
-  //       {
-  //         method: 'POST',
-  //         body: formData
-  //       })
-  //     if (!response.ok)
-  //       throw response;
-  //   } catch (error) { console.log(error) }
   // }
 
 }
