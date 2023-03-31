@@ -11,8 +11,8 @@
         <span class="highlight">{{project['langs']}}</span>
         <span>{{project['description']}}</span>
         <div class="btn-container">
-            <button (click)="projectServer()">TRY</button>
-            <button (click)="projectGit()">GITHUB</button>
+            <button (click)="projectServer(project['tryBtn'])">TRY</button>
+            <button (click)="projectGit(project['gitBtn'])">GITHUB</button>
         </div>
     </div>
 </div>

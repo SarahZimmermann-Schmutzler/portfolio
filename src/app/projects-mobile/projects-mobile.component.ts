@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-projects-mobile',
@@ -7,8 +6,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./projects-mobile.component.scss']
 })
 export class ProjectsMobileComponent {
-
-  constructor(private router: Router) {}
 
   projects = [
     {
@@ -40,45 +37,31 @@ export class ProjectsMobileComponent {
   ];
 
 
-  projectServer() {
-    if('serverRof') {
+  projectServer(pageToGo: any) {
+    if(pageToGo == 'serverRof') {
       window.open('https://ring-of-fire-54fa3.web.app', '_blank');
     }
     
-    if('serverPollo') {
+    if(pageToGo == 'serverPollo') {
       window.open('https://sarah-zimmermann-schmutzler.developerakademie.net/elPolloLoco/index.html', '_blank');
     }
 
-    if('serverJoin') {
+    if(pageToGo == 'serverJoin') {
       window.open('https://sarah-zimmermann-schmutzler.developerakademie.net/join_new/index.html', '_blank');
     }
   }
 
-  projectGit() {
+  projectGit(pageToGo: any) {
+    if(pageToGo == 'gitRof') {
+      window.open('https://github.com/SarahZimmermann-Schmutzler/Ring-of-Fire', '_blank');
+    }
+    
+    if(pageToGo == 'gitPollo') {
+      window.open('https://github.com/SarahZimmermann-Schmutzler/El_Pollo_Loco', '_blank');
+    }
 
-  }
-
-  gitRof() {
-    window.open('https://github.com/SarahZimmermann-Schmutzler/Ring-of-Fire', '_blank');
-  }
-
-  gitPollo() {
-    window.open('https://github.com/SarahZimmermann-Schmutzler/El_Pollo_Loco', '_blank');
-  }
-
-  gitJoin() {
-    window.open('https://github.com/SarahZimmermann-Schmutzler/join_new', '_blank');
-  }
-
-  serverRof() {
-    window.open('https://ring-of-fire-54fa3.web.app', '_blank');
-  }
-
-  serverPollo() {
-    window.open('https://sarah-zimmermann-schmutzler.developerakademie.net/elPolloLoco/index.html', '_blank');
-  }
-
-  serverJoin() {
-    window.open('https://sarah-zimmermann-schmutzler.developerakademie.net/join_new/index.html', '_blank');
+    if(pageToGo == 'gitJoin') {
+      window.open('https://github.com/SarahZimmermann-Schmutzler/join_new', '_blank');
+    }
   }
 }
