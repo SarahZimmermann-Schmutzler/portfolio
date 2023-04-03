@@ -11,6 +11,7 @@ export class ContactComponent {
   @ViewChild('mailField') mailField!: ElementRef;
   @ViewChild('messageField') messageField!: ElementRef;
   @ViewChild('sendBtn') sendBtn!: ElementRef;
+  sendingSuccess = false;
 
 
 async sendMail() {
@@ -39,7 +40,9 @@ async sendMail() {
 
     this.mailDelivered();
 
-    this.activateBtn(nameField, mailField, messageField, sendBtn);
+    setTimeout(() => {
+      this.activateBtn(nameField, mailField, messageField, sendBtn);
+    }, 4500)
   }
 
   disableBtn(nameField: any, mailField: any, messageField: any, sendBtn:any) {
@@ -49,7 +52,12 @@ async sendMail() {
     sendBtn.disable = true;
   }
 
+  mailDelivered() {
+    this.sendingSuccess = true;
+  }
+
   activateBtn(nameField: any, mailField: any, messageField: any, sendBtn:any) {
+    this.sendingSuccess = false;
     nameField.disabled = false;
     nameField.value = '';
     mailField.disabled = false;
@@ -59,9 +67,7 @@ async sendMail() {
     sendBtn.disabled = false;
   }
 
-  mailDelivered() {
-    alert('Mail delivered!');
-  }
+  
   
 // Mihails try and catch funktion
   // async sendMail() {
