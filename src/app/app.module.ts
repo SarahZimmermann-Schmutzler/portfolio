@@ -24,6 +24,11 @@ import { SkillsMobileComponent } from './skills-mobile/skills-mobile.component';
 import { ProjectsMobileComponent } from './projects-mobile/projects-mobile.component';
 import { ContactMobileComponent } from './contact-mobile/contact-mobile.component';
 import { FooterMobileComponent } from './footer-mobile/footer-mobile.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -65,7 +70,7 @@ export function HttpLoaderFactory(http: HttpClient) {
           useFactory: HttpLoaderFactory,
           deps: [HttpClient]
         }
-      })
+      }), provideFirebaseApp(() => initializeApp(environment.firebase)), provideAuth(() => getAuth()), provideDatabase(() => getDatabase()), provideFirestore(() => getFirestore())
   ],
   providers: [],
   bootstrap: [AppComponent]
