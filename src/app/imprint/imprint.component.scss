@@ -1,10 +1,35 @@
 .impressum {
+    min-height: 100vh;
+    margin-top: -45px;
     padding-left: 115px;
     padding-right: 115px;
     background-color: rgba(254, 227, 131, 1);
+    word-wrap: break-word;
 
     a {
         text-decoration: underline;
         color: black;
+    }
+
+    h2 {
+        padding-top: 45px;
+
+        @media (max-width: 700px) {
+            font-size: 46px;
+        }
+    
+        @media (max-width: 436px) {
+            font-size: 32px;
+        }
+    }
+
+    @media (max-width: 700px) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    @media (max-width: 436px) {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }

@@ -3,90 +3,139 @@
 
 /* poppins-regular - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../src/assets/fonts/poppins/poppins-v20-latin-regular.eot'); /* IE9 Compat Modes */
-    src: url('../src/assets/fonts/poppins/poppins-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../src/assets/fonts/poppins/poppins-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../src/assets/fonts/poppins/poppins-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../src/assets/fonts/poppins/poppins-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../src/assets/fonts/poppins/poppins-v20-latin-regular.svg#Poppins') format('svg'); /* Legacy iOS */
-  }
-  /* poppins-500 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../src/assets/fonts/poppins/poppins-v20-latin-500.eot'); /* IE9 Compat Modes */
-    src: url('../src/assets/fonts/poppins/poppins-v20-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../src/assets/fonts/poppins/poppins-v20-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../src/assets/fonts/poppins/poppins-v20-latin-500.woff') format('woff'), /* Modern Browsers */
-         url('../src/assets/fonts/poppins/poppins-v20-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../src/assets/fonts/poppins/poppins-v20-latin-500.svg#Poppins') format('svg'); /* Legacy iOS */
-  }
-  /* poppins-700 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../src/assets/fonts/poppins/poppins-v20-latin-700.eot'); /* IE9 Compat Modes */
-    src: url('../src/assets/fonts/poppins/poppins-v20-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../src/assets/fonts/poppins/poppins-v20-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../src/assets/fonts/poppins/poppins-v20-latin-700.woff') format('woff'), /* Modern Browsers */
-         url('../src/assets/fonts/poppins/poppins-v20-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../src/assets/fonts/poppins/poppins-v20-latin-700.svg#Poppins') format('svg'); /* Legacy iOS */
-  }
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../src/assets/fonts/poppins/poppins-v20-latin-regular.eot');
+  /* IE9 Compat Modes */
+  src: url('../src/assets/fonts/poppins/poppins-v20-latin-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../src/assets/fonts/poppins/poppins-v20-latin-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../src/assets/fonts/poppins/poppins-v20-latin-regular.woff') format('woff'),
+    /* Modern Browsers */
+    url('../src/assets/fonts/poppins/poppins-v20-latin-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../src/assets/fonts/poppins/poppins-v20-latin-regular.svg#Poppins') format('svg');
+  /* Legacy iOS */
+}
 
-  /* kalam-regular - latin */
+/* poppins-500 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../src/assets/fonts/poppins/poppins-v20-latin-500.eot');
+  /* IE9 Compat Modes */
+  src: url('../src/assets/fonts/poppins/poppins-v20-latin-500.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../src/assets/fonts/poppins/poppins-v20-latin-500.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../src/assets/fonts/poppins/poppins-v20-latin-500.woff') format('woff'),
+    /* Modern Browsers */
+    url('../src/assets/fonts/poppins/poppins-v20-latin-500.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../src/assets/fonts/poppins/poppins-v20-latin-500.svg#Poppins') format('svg');
+  /* Legacy iOS */
+}
+
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../src/assets/fonts/poppins/poppins-v20-latin-700.eot');
+  /* IE9 Compat Modes */
+  src: url('../src/assets/fonts/poppins/poppins-v20-latin-700.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../src/assets/fonts/poppins/poppins-v20-latin-700.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../src/assets/fonts/poppins/poppins-v20-latin-700.woff') format('woff'),
+    /* Modern Browsers */
+    url('../src/assets/fonts/poppins/poppins-v20-latin-700.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../src/assets/fonts/poppins/poppins-v20-latin-700.svg#Poppins') format('svg');
+  /* Legacy iOS */
+}
+
+/* kalam-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Kalam';
   font-style: normal;
   font-weight: 400;
-  src: url('../src/assets/fonts/kalam/kalam-v16-latin-regular.eot'); /* IE9 Compat Modes */
-  src: url('../src/assets/fonts/kalam/kalam-v16-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../src/assets/fonts/kalam/kalam-v16-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../src/assets/fonts/kalam/kalam-v16-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../src/assets/fonts/kalam/kalam-v16-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../src/assets/fonts/kalam/kalam-v16-latin-regular.svg#Kalam') format('svg'); /* Legacy iOS */
+  src: url('../src/assets/fonts/kalam/kalam-v16-latin-regular.eot');
+  /* IE9 Compat Modes */
+  src: url('../src/assets/fonts/kalam/kalam-v16-latin-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../src/assets/fonts/kalam/kalam-v16-latin-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../src/assets/fonts/kalam/kalam-v16-latin-regular.woff') format('woff'),
+    /* Modern Browsers */
+    url('../src/assets/fonts/kalam/kalam-v16-latin-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../src/assets/fonts/kalam/kalam-v16-latin-regular.svg#Kalam') format('svg');
+  /* Legacy iOS */
 }
 
 /* sen-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Sen';
   font-style: normal;
   font-weight: 400;
-  src: url('../src/assets/fonts/sen/sen-v7-latin-regular.eot'); /* IE9 Compat Modes */
-  src: url('../src/assets/fonts/sen/sen-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../src/assets/fonts/sen/sen-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../src/assets/fonts/sen/sen-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../src/assets/fonts/sen/sen-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../src/assets/fonts/sen/sen-v7-latin-regular.svg#Sen') format('svg'); /* Legacy iOS */
+  src: url('../src/assets/fonts/sen/sen-v7-latin-regular.eot');
+  /* IE9 Compat Modes */
+  src: url('../src/assets/fonts/sen/sen-v7-latin-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../src/assets/fonts/sen/sen-v7-latin-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../src/assets/fonts/sen/sen-v7-latin-regular.woff') format('woff'),
+    /* Modern Browsers */
+    url('../src/assets/fonts/sen/sen-v7-latin-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../src/assets/fonts/sen/sen-v7-latin-regular.svg#Sen') format('svg');
+  /* Legacy iOS */
 }
+
 /* sen-700 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Sen';
   font-style: normal;
   font-weight: 700;
-  src: url('../src/assets/fonts/sen/sen-v7-latin-700.eot'); /* IE9 Compat Modes */
-  src: url('../src/assets/fonts/sen/sen-v7-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../src/assets/fonts/sen/sen-v7-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../src/assets/fonts/sen/sen-v7-latin-700.woff') format('woff'), /* Modern Browsers */
-       url('../src/assets/fonts/sen/sen-v7-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../src/assets/fonts/sen/sen-v7-latin-700.svg#Sen') format('svg'); /* Legacy iOS */
+  src: url('../src/assets/fonts/sen/sen-v7-latin-700.eot');
+  /* IE9 Compat Modes */
+  src: url('../src/assets/fonts/sen/sen-v7-latin-700.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../src/assets/fonts/sen/sen-v7-latin-700.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../src/assets/fonts/sen/sen-v7-latin-700.woff') format('woff'),
+    /* Modern Browsers */
+    url('../src/assets/fonts/sen/sen-v7-latin-700.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../src/assets/fonts/sen/sen-v7-latin-700.svg#Sen') format('svg');
+  /* Legacy iOS */
 }
 
 // main scss
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 body {
-    margin: 0;
-    font-family: 'Poppins';
+  margin: 0;
+  font-family: 'Poppins';
 }
 
 h2 {
@@ -97,12 +146,12 @@ h2 {
 
 @media (max-width: 1089px) {
   .hide-desktop {
-      display: none;
+    display: none;
   }
 }
 
 @media (min-width: 1090px) {
   .hide-mobile {
-      display: none;
+    display: none;
   }
 }
