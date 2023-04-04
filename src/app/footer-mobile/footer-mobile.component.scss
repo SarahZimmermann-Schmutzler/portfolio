@@ -21,6 +21,7 @@
         a {
             cursor: pointer;
             text-decoration: none;
+            color: rgba(138, 138, 138, 1);
 
             &:hover {
                 color: rgba(254, 227, 131, 1) !important;
@@ -47,6 +48,7 @@
     a {
         padding-left: 10px !important;
         font-size: 18px;
+        color: rgba(138, 138, 138, 1);
 
         &:hover {
             color: rgba(254, 227, 131, 1) !important;
