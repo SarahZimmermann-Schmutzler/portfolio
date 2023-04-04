@@ -60,7 +60,9 @@
     margin-top: 20px;
     padding-left: 80px;
     padding-right: 80px;
+    min-height: 45px;
     display: flex;
+    align-items: center;
 
     @media (max-width: 700px) {
         padding-left: 50px;
@@ -106,10 +108,12 @@
 
 .btn-container {
     margin-top: 40px;
+    min-height: 90px;
     padding-left: 80px;
     padding-right: 80px;
     display: flex;
     justify-content: center;
+    align-items: center;
 
     @media (max-width: 700px) {
         padding-left: 50px;
@@ -126,6 +130,7 @@
         background-color: rgba(254, 227, 131, 1);
         color: rgba(0, 0, 0, 0.6);
         width: 360px;
+        height: 80px;
         border: none;
         padding: 30px;
         font-size: 20px;
