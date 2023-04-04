@@ -6,10 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent {
-  showInfos() {
-    console.log('mouse in the house')
-  }
-
   gitRof() {
     window.open('https://github.com/SarahZimmermann-Schmutzler/Ring-of-Fire', '_blank');
   }

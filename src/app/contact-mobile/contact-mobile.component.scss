@@ -70,12 +70,24 @@
             border: none;
             height: 50px;
             margin-bottom: 40px;
+
+            &:focus {
+                outline: unset;
+                border: unset;
+                background-color: white;
+            }
         }
 
         textarea {
             border: none;
             height: 100px;
             margin-bottom: 40px;
+
+            &:focus {
+                outline: unset;
+                border: unset;
+                background-color: white;
+            }
         }
 
         button {
