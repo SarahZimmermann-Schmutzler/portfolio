@@ -34,7 +34,7 @@
     img {
         width: 620px;
         height: 390px;
-        object-fit: cover;
+        object-fit: contain;
 
         @media (max-width: 1280px) {
             width: 500px;

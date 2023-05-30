@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent {
-  gitRof() {
-    window.open('https://github.com/SarahZimmermann-Schmutzler/Ring-of-Fire', '_blank');
+  gitSlack() {
+    window.open('https://github.com/SarahZimmermann-Schmutzler/MySlack', '_blank');
   }
 
   gitPollo() {
@@ -18,8 +18,8 @@ export class ProjectsComponent {
     window.open('https://github.com/SarahZimmermann-Schmutzler/join_new', '_blank');
   }
 
-  serverRof() {
-    window.open('https://ring-of-fire-54fa3.web.app', '_blank');
+  serverSlack() {
+    window.open('https://myslack-6868b.web.app/', '_blank');
   }
 
   serverPollo() {

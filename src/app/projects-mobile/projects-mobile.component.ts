@@ -9,12 +9,12 @@ export class ProjectsMobileComponent {
 
   projects = [
     {
-      'image': 'ring.png',
-      'title': 'RING OF FIRE',
+      'image': 'slack1.png',
+      'title': 'MySlack',
       'langs': 'Angular | Firebase | TypeScript | HTML | SCSS',
-      'description': 'Popular Card Game "Ring of Fire" as a multiplayer App. Coded with Angular and Firebase.',
-      'tryBtn': 'serverRof',
-      'gitBtn': 'gitRof'
+      'description': 'Instant messaging program. Coded with Angular and Firebase.',
+      'tryBtn': 'serverSlack',
+      'gitBtn': 'gitSlack'
     },
 
     {
@@ -38,8 +38,8 @@ export class ProjectsMobileComponent {
 
 
   projectServer(pageToGo: any) {
-    if(pageToGo == 'serverRof') {
-      window.open('https://ring-of-fire-54fa3.web.app', '_blank');
+    if(pageToGo == 'serverSlack') {
+      window.open('https://myslack-6868b.web.app/', '_blank');
     }
     
     if(pageToGo == 'serverPollo') {
@@ -52,8 +52,8 @@ export class ProjectsMobileComponent {
   }
 
   projectGit(pageToGo: any) {
-    if(pageToGo == 'gitRof') {
-      window.open('https://github.com/SarahZimmermann-Schmutzler/Ring-of-Fire', '_blank');
+    if(pageToGo == 'gitSlack') {
+      window.open('https://github.com/SarahZimmermann-Schmutzler/MySlack', '_blank');
     }
     
     if(pageToGo == 'gitPollo') {
