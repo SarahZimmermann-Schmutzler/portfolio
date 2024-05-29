@@ -1,21 +1,15 @@
 <div class="header-container">
     <div class="menu-container">
-        <div *ngIf="service.deutsch || deutsch">
-            <a href="#about">ÜBER</a>
-            <a href="#skills">FÄHIGKEITEN</a>
-            <a href="#projects">PROJEKTE</a>
-        </div>
-
-        <div *ngIf="service.english">
-            <a href="#about">ABOUT</a>
-            <a href="#skills">SKILLS</a>
-            <a href="#projects">PROJECTS</a>
+        <div>
+            <a href="#about" translate>ABOUT</a>
+            <a href="#skills" translate>SKILLS</a>
+            <a href="#projects" translate>PROJECTS</a>
         </div>
 
         <div class="language">
-            <a (click)="translateToGerman()">DE</a>
+            <a (click)="translation.use('de')">DE</a>
             <span>|</span>
-            <a (click)="translateToEnglish()">EN</a>
+            <a (click)="translation.use('en')">EN</a>
         </div>
 
     </div>
