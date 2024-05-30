@@ -13,8 +13,6 @@ export class HeaderComponent {
    // fügen das in HTML als Link ein, um Sprachen zu switchen
 }
 
-ngOnInit() {
-  
-}
+ngOnInit() {}
 
 }

@@ -1,13 +1,10 @@
 <div class="contact-container" id="contact">
     <div class="text-container">
-        <h2 translate>Contact</h2>
-        <span translate>You have a coding problem to solve?</span>
+        <h2 translate>Kontakt</h2>
+        <span translate>Sie haben ein Programmier-Problem, das gelöst werden muss?</span>
         <br>
         <br>
-        <span translate>Now that you know a bit of my work, let me know if you are interested to work with me.</span>
-        <br>
-        <br>
-        <span translate>To support our family life I only work remote and part time.</span>
+        <span translate>Jetzt, da Sie meine Arbeit ein wenig kennengelernt haben, lassen Sie mich wissen, wie ich Ihnen helfen kann.</span>
     </div>
 
     <div class="form-container">
@@ -16,13 +13,13 @@
             <input type="text" name="name" required #nameField>
             <span>Email</span>
             <input type="email" name="email" required #mailField>
-            <span translate>Message</span>
+            <span translate>Nachricht</span>
             <textarea type="text" name="message" required #messageField></textarea>
-            <button #sendBtn>LET'S GET STARTED</button>
+            <button #sendBtn translate>LOS GEHT'S</button>
         </form>
     </div>
 </div>
 
 <div [class.send-container]="sendingSuccess">
-    <span class="info" [class.d-block]="sendingSuccess" translaste>Mail was send successfully!</span>
+    <span class="info" [class.d-block]="sendingSuccess" translate>Mail was send successfully!</span>
 </div>

@@ -9,31 +9,34 @@ export class ProjectsMobileComponent {
 
   projects = [
     {
-      'image': 'slack1.png',
-      'title': 'MySlack',
-      'langs': 'Angular | Firebase | TypeScript | HTML | SCSS',
-      'description': 'Instant messaging program. Coded with Angular and Firebase.',
-      'tryBtn': 'serverSlack',
-      'gitBtn': 'gitSlack'
-    },
-
-    {
       'image': 'pollo.png',
-      'title': 'EL POLLO LOCO',
-      'langs': 'JavaScript | HTML | CSS',
-      'description': 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
+      'title': 'VIDEOFLIX',
+      'langsF': 'Angular | JavaScript | HTML | SCSS',
+      'langsB': 'Python | Django | Django REST framework',
+      'description': 'Video-Streaming-Seite im Stil von Netflix.',
       'tryBtn': 'serverPollo',
       'gitBtn': 'gitPollo'
     },
 
     {
       'image': 'join.png',
-      'title': 'JOIN',
-      'langs': 'JavaScript | HTML | CSS',
-      'description': 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+      'title': 'KenBen',
+      'langsF': 'Angular | JavaScript | HTML | SCSS',
+      'langsB': 'Python | Django | Django REST framework',
+      'description': 'Ein Taskmanager inspiriert vom Kanban System. Erstelle und organisiere Aufgaben und ordne sie mittels Drag and Drop verschiedenen Rubriken zu.',
       'tryBtn': 'serverJoin',
       'gitBtn': 'gitJoin'
-    }
+    },
+
+    {
+      'image': 'slack1.png',
+      'title': 'MySlack',
+      'langsF': 'Angular | JavaScript | HTML | SCSS',
+      'langsB': 'Firebase',
+      'description': 'Kurznachrichtendienst in Echtzeit. Programmiert mit Angular und Firebase.',
+      'tryBtn': 'serverSlack',
+      'gitBtn': 'gitSlack'
+    },
   ];
 
 
