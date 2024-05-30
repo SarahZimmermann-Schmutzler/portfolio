@@ -14,8 +14,8 @@ export class ProjectsMobileComponent {
       'langsF': 'Angular | JavaScript | HTML | SCSS',
       'langsB': 'Python | Django | Django REST framework',
       'description': 'Video-Streaming-Seite im Stil von Netflix.',
-      'tryBtn': 'serverPollo',
-      'gitBtn': 'gitPollo'
+      'tryBtn': 'serverVideo',
+      'gitBtn': 'gitVideo'
     },
 
     {
@@ -24,8 +24,8 @@ export class ProjectsMobileComponent {
       'langsF': 'Angular | JavaScript | HTML | SCSS',
       'langsB': 'Python | Django | Django REST framework',
       'description': 'Ein Taskmanager inspiriert vom Kanban System. Erstelle und organisiere Aufgaben und ordne sie mittels Drag and Drop verschiedenen Rubriken zu.',
-      'tryBtn': 'serverJoin',
-      'gitBtn': 'gitJoin'
+      'tryBtn': 'serverKenben',
+      'gitBtn': 'gitKenben'
     },
 
     {
@@ -45,12 +45,12 @@ export class ProjectsMobileComponent {
       window.open('https://myslack-6868b.web.app/', '_blank');
     }
     
-    if(pageToGo == 'serverPollo') {
-      window.open('https://sarah-zimmermann-schmutzler.developerakademie.net/elPolloLoco/index.html', '_blank');
+    if(pageToGo == 'serverVideo') {
+      window.open('https://videoflix.s-zimmermann-schmutzler.de/home', '_blank');
     }
 
-    if(pageToGo == 'serverJoin') {
-      window.open('https://sarah-zimmermann-schmutzler.developerakademie.net/join_new/index.html', '_blank');
+    if(pageToGo == 'serverKenben') {
+      window.open('https://www.kenben.s-zimmermann-schmutzler.de/login', '_blank');
     }
   }
 
@@ -59,12 +59,12 @@ export class ProjectsMobileComponent {
       window.open('https://github.com/SarahZimmermann-Schmutzler/MySlack', '_blank');
     }
     
-    if(pageToGo == 'gitPollo') {
-      window.open('https://github.com/SarahZimmermann-Schmutzler/El_Pollo_Loco', '_blank');
+    if(pageToGo == 'gitVideo') {
+      window.open('https://github.com/SarahZimmermann-Schmutzler/videoflix_frontend', '_blank');
     }
 
-    if(pageToGo == 'gitJoin') {
-      window.open('https://github.com/SarahZimmermann-Schmutzler/join_new', '_blank');
+    if(pageToGo == 'gitKenben') {
+      window.open('https://github.com/SarahZimmermann-Schmutzler/kenben_frontend', '_blank');
     }
   }
 }

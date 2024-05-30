@@ -10,23 +10,23 @@ export class ProjectsComponent {
     window.open('https://github.com/SarahZimmermann-Schmutzler/MySlack', '_blank');
   }
 
-  gitPollo() {
-    window.open('https://github.com/SarahZimmermann-Schmutzler/El_Pollo_Loco', '_blank');
+  gitVideo() {
+    window.open('https://github.com/SarahZimmermann-Schmutzler/videoflix_frontend', '_blank');
   }
 
-  gitJoin() {
-    window.open('https://github.com/SarahZimmermann-Schmutzler/join_new', '_blank');
+  gitKenben() {
+    window.open('https://github.com/SarahZimmermann-Schmutzler/kenben_frontend', '_blank');
   }
 
   serverSlack() {
     window.open('https://myslack-6868b.web.app/', '_blank');
   }
 
-  serverPollo() {
-    window.open('https://sarah-zimmermann-schmutzler.developerakademie.net/elPolloLoco/index.html', '_blank');
+  serverVideo() {
+    window.open('https://videoflix.s-zimmermann-schmutzler.de/home', '_blank');
   }
 
-  serverJoin() {
-    window.open('https://sarah-zimmermann-schmutzler.developerakademie.net/join_new/index.html', '_blank');
+  serverKenben() {
+    window.open('https://www.kenben.s-zimmermann-schmutzler.de/login', '_blank');
   }
 }
