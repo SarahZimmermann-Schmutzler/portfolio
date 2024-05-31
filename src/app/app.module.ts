@@ -15,7 +15,7 @@ import { MainpageComponent } from './mainpage/mainpage.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpClientModule, HttpClient, provideHttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HeaderMobileComponent } from './header-mobile/header-mobile.component';
 import { StartscreenMobileComponent } from './startscreen-mobile/startscreen-mobile.component';
@@ -72,7 +72,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         }
       }), provideFirebaseApp(() => initializeApp(environment.firebase)), provideAuth(() => getAuth()), provideDatabase(() => getDatabase()), provideFirestore(() => getFirestore())
   ],
-  providers: [],
+  providers: [provideHttpClient()],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

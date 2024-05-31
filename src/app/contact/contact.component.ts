@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -6,134 +8,75 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
-  @ViewChild('myForm') myForm!: ElementRef;
-  @ViewChild('nameField') nameField!: ElementRef;
-  @ViewChild('mailField') mailField!: ElementRef;
-  @ViewChild('messageField') messageField!: ElementRef;
-  @ViewChild('sendBtn') sendBtn!: ElementRef;
+  // @ViewChild('myForm') myForm!: ElementRef;
+  // @ViewChild('nameField') nameField!: ElementRef;
+  // @ViewChild('mailField') mailField!: ElementRef;
+  // @ViewChild('messageField') messageField!: ElementRef;
+  // @ViewChild('sendBtn') sendBtn!: ElementRef;
+  
   sendingSuccess = false;
+  contactData = {
+    name: '',
+    email: '',
+    message: '',
+  }
+  disabled = true;
+  mailTest = true;
+  post = {
+    endPoint: 'https://s-zimmermann-schmutzler.de/sendMail.php',
+    body: (payload: any) => JSON.stringify(payload),
+    options: {
+      headers: {
+        'Content-Type': 'text/plain',
+        responseType: 'text',
+      },
+    },
+  };
 
 
-async sendMail() {
-    let nameField = this.nameField.nativeElement;
-    let mailField = this.mailField.nativeElement;
-    let messageField = this.messageField.nativeElement;
-    let sendBtn = this.sendBtn.nativeElement;
+  constructor(public http: HttpClient) {}
 
-    this.disableBtn(nameField, mailField, messageField, sendBtn);
-
-    let formData = new FormData();
-    formData.append('name', nameField.value);
-    formData.append('email', mailField.value);
-    formData.append('message', messageField.value);
-
-    try {
-      // senden Daten per Post request an folgende URL
-      let response = await fetch('https://sarah-zimmermann-schmutzler.developerakademie.net/send_mail_portfolio/send_mail.php',
-        {
-          method: 'POST',
-          body: formData
-        })
-      if (!response.ok)
-        throw response;
-    } catch (error) { console.log(error) }
-
-    this.mailDelivered();
-
-    setTimeout(() => {
-      this.activateBtn(nameField, mailField, messageField, sendBtn);
-    }, 4500)
+  ngOnInit() {
+    this.watchForm();
   }
 
-  disableBtn(nameField: any, mailField: any, messageField: any, sendBtn:any) {
-    nameField.disable = true;
-    mailField.disable = true;
-    messageField.disable = true;
-    sendBtn.disable = true;
+  watchForm() {
+    setInterval(() => {
+      if (
+        this.contactData.email.includes('@') &&
+        this.contactData.email.includes('.') &&
+        this.contactData.name.length > 0 &&
+        this.contactData.message.length > 0
+      ) {
+        this.disabled = false;
+      } else {
+        this.disabled = true;
+      }
+    }, 500);
   }
 
-  mailDelivered() {
-    this.sendingSuccess = true;
+  sendMail() {
+    console.log(this.contactData)
+    if (!this.mailTest) {
+      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+        .subscribe({
+          next: (response) => {
+            this.sendingSuccess = true;
+            this.contactData.name = '';
+            this.contactData.email = '';
+            this.contactData.message = '';
+          },
+          error: (error) => {
+            console.error(error);
+          },
+          complete: () => console.info('send post complete'),
+        });
+    } else if (this.mailTest) {
+      console.log('Testmodus funzt');
+      this.sendingSuccess = true;
+      this.contactData.name = '';
+      this.contactData.email = '';
+      this.contactData.message = '';
+    }
   }
-
-  activateBtn(nameField: any, mailField: any, messageField: any, sendBtn:any) {
-    this.sendingSuccess = false;
-    nameField.disabled = false;
-    nameField.value = '';
-    mailField.disabled = false;
-    mailField.value = '';
-    messageField.disabled = false;
-    messageField.value = '';
-    sendBtn.disabled = false;
-  }
-
-  
-  
-// Mihails try and catch funktion
-  // async sendMail() {
-  //   let nameField = this.nameField.nativeElement;
-  //   let mailField = this.mailField.nativeElement;
-  //   let messageField = this.messageField.nativeElement;
-  //   let sendBtn = this.sendBtn.nativeElement;
-
-  //   let formData = new FormData();
-  //   formData.append('name', nameField.value);
-  //   formData.append('email', mailField.value);
-  //   formData.append('message', messageField.value);
-
-  //   try {
-  //     // senden Daten per Post request an folgende URL
-  //     let response = await fetch('https://sarah-zimmermann-schmutzler.developerakademie.net/send_mail_portfolio/send_mail.php',
-  //       {
-  //         method: 'POST',
-  //         body: formData
-  //       })
-  //     if (!response.ok)
-  //       throw response;
-  //   } catch (error) { console.log(error) }
-  // }
-
-
-  // Funktion von Junus
-  // async sendMail() {
-  //   console.log('Sending mail', this.myForm);
-  //   // holen uns die Elemente
-  //   // this.nameField.nativeElement = getElementById
-  //   let nameField = this.nameField.nativeElement;
-  //   let mailField = this.mailField.nativeElement;
-  //   let messageField = this.messageField.nativeElement;
-  //   let sendBtn = this.sendBtn.nativeElement;
-
-  //   // disablen solange Sendevorgang
-  //   nameField.disabled = true;
-  //   mailField.disabled = true;
-  //   messageField.disabled = true;
-  //   sendBtn.disabled = true;
-
-
-  //   // Animation anzeigen, dass gerade gesendet wird
-
-  //   // bereiten Daten vor, die wir senden wollen
-  //   let formData = new FormData();
-  //   formData.append('name', nameField.value);
-  //   formData.append('email', mailField.value);
-  //   formData.append('message', messageField.value);
-
-  //   // senden Daten per Post request an folgende URL
-  //   await fetch('https://sarah-zimmermann-schmutzler.developerakademie.net/send_mail_portfolio/send_mail.php'),
-  //   {
-  //     method: 'POST',
-  //     body: formData
-  //   };
-
-  //   // Nachricht anzeigen, dass gesendet
-
-  //   // aktivieren nach Senden
-  //   nameField.disabled = false;
-  //   mailField.disabled = false;
-  //   messageField.disabled = false;
-  //   sendBtn.disabled = false;
-
-  // }
-
 }

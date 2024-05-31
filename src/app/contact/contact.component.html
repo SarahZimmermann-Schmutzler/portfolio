@@ -8,14 +8,14 @@
     </div>
 
     <div class="form-container">
-        <form (submit)="sendMail()" #myForm ngNativeValidate>
+        <form (ngSubmit)="sendMail()">
             <span>Name</span>
-            <input type="text" name="name" required #nameField>
+            <input type="text" name="name" [(ngModel)]="contactData.name" >
             <span>Email</span>
-            <input type="email" name="email" required #mailField>
+            <input type="email" name="email" [(ngModel)]="contactData.email">
             <span translate>Nachricht</span>
-            <textarea type="text" name="message" required #messageField></textarea>
-            <button #sendBtn translate>LOS GEHT'S</button>
+            <textarea type="text" name="message" [(ngModel)]="contactData.message"></textarea>
+            <button [disabled]="disabled" [class.disabled-btn]="disabled" translate>LOS GEHT'S</button>
         </form>
     </div>
 </div>
