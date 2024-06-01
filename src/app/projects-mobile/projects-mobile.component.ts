@@ -33,7 +33,7 @@ export class ProjectsMobileComponent {
       'title': 'MySlack',
       'langsF': 'Angular | JavaScript | HTML | SCSS',
       'langsB': 'Firebase',
-      'description': 'Kurznachrichtendienst in Echtzeit. Programmiert mit Angular und Firebase.',
+      'description': 'Ein Kurznachrichtendienst in Echtzeit. Programmiert mit Angular und Firebase.',
       'tryBtn': 'serverSlack',
       'gitBtn': 'gitSlack'
     },
