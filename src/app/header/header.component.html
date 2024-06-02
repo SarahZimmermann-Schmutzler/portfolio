@@ -1,17 +1,16 @@
 <div class="header-container">
     <div class="menu-container">
-        <div>
-            <a href="#about" translate>ÜBER MICH</a>
-            <a href="#skills" translate>FÄHIGKEITEN</a>
-            <a href="#projects" translate>PROJEKTE</a>
+        <div class="link-container">
+            <div><a href="#about" translate>ÜBER MICH</a></div>
+            <div><a href="#skills" translate>FÄHIGKEITEN</a></div>
+            <div><a href="#projects" translate>PROJEKTE</a></div>
         </div>
 
         <div class="language">
             <a (click)="translation.use('de')">DE</a>
             <span>|</span>
-            <a (click)="translation.use('en')">EN</a>
+            <a style="padding-left: 8px;" (click)="translation.use('en')">EN</a>
         </div>
-
     </div>
 
     <div class="img-sec-container">
