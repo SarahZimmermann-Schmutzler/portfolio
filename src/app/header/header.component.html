@@ -1,7 +1,7 @@
 <div class="header-container">
     <div class="menu-container">
         <div class="link-container">
-            <div ><a href="#about" translate>ÜBER MICH</a></div>
+            <div><a href="#about" translate>ÜBER MICH</a></div>
             <div><a href="#skills" translate>FÄHIGKEITEN</a></div>
             <div><a href="#projects" translate>PROJEKTE</a></div>
         </div>
@@ -18,10 +18,10 @@
     </div>
 
     <div class="img-sec-container">
-        <div class="placeholder"></div>
-
         <div class="img-container">
-            <img src="assets/img/Sarah.jpg">
+            <img src="assets/img/Sarah.jpg" (mouseover)="border=true" (mouseout)="border=false">
         </div>
     </div>
 </div>
+
+<div [class.border]="border"></div>
