@@ -1,15 +1,19 @@
 <div class="header-container">
     <div class="menu-container">
         <div class="link-container">
-            <div><a href="#about" translate>ÜBER MICH</a></div>
+            <div ><a href="#about" translate>ÜBER MICH</a></div>
             <div><a href="#skills" translate>FÄHIGKEITEN</a></div>
             <div><a href="#projects" translate>PROJEKTE</a></div>
         </div>
 
         <div class="language">
-            <a (click)="translation.use('de')">DE</a>
+            <div class="trans-de-eng" (click)="translation.use('de')">
+                <div>DE</div>
+            </div>
             <span>|</span>
-            <a style="padding-left: 8px;" (click)="translation.use('en')">EN</a>
+            <div class="trans-de-eng" (click)="translation.use('en')">
+                <div class="trans-de-eng">EN</div>
+            </div>
         </div>
     </div>
 
@@ -17,7 +21,7 @@
         <div class="placeholder"></div>
 
         <div class="img-container">
-            <img src="assets/img/Sarah.JPG">
+            <img src="assets/img/Sarah.jpg">
         </div>
     </div>
 </div>
