@@ -1,7 +1,13 @@
 <div class="bg-container" id="skills">
-    <h2 translate>Fähigkeiten <span translate>Ich durfte bereits mit vielen Konzepten Erfahrungen sammeln.</span></h2>
+    <div class="title-container">
+        <div translate>Fähigkeiten 
+            <span translate>Ich durfte bereits mit vielen Konzepten Erfahrungen sammeln.</span>
+        </div>
+        <!-- <h2 translate>Fähigkeiten</h2>
+        <span translate>Ich durfte bereits mit vielen Konzepten Erfahrungen sammeln.</span> -->
+    </div>
 
-    <div class="skills-container">
+    <!-- <div class="skills-container">
         <img src="assets/img/skills/angular.png">
         <img src="assets/img/skills/ts.png">
         <img src="assets/img/skills/js.png">
@@ -12,5 +18,29 @@
         <img src="assets/img/skills/css.png">
         <img src="assets/img/skills/api.png">
         <img src="assets/img/skills/md.png">
+    </div> -->
+
+    <div class="skills-container">
+        <div class="img-container">
+            <!-- <div *ngFor=" let image of firstRow; let i = index">
+                <img src="{{image.source}}" (mouseover)="title{i}=true" [class.d-none]="title{i}">
+                <div class="title-overlay d-none"></div>
+            </div> -->
+            
+            <img src="assets/img/skills/angular.png" (mouseover)="titleOne=true" (mouseleave)="titleOne=false" [class.d-none]="titleOne">
+            <div class="title-overlay d-none" [class.show]="titleOne"></div>
+            <img src="assets/img/skills/ts.png">
+            <img src="assets/img/skills/js.png">
+            <img src="assets/img/skills/html.png">
+            <img src="assets/img/skills/scrum.png">
+        </div>
+
+        <div class="img-container">
+            <img src="assets/img/skills/firebase.png">
+            <img src="assets/img/skills/git.png">
+            <img src="assets/img/skills/css.png">
+            <img src="assets/img/skills/api.png">
+            <img src="assets/img/skills/md.png">
+        </div>
     </div>
 </div>
