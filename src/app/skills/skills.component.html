@@ -27,7 +27,7 @@
                 <div class="title-overlay d-none"></div>
             </div> -->
             
-            <img src="assets/img/skills/angular.png" (mouseover)="titleOne=true" (mouseleave)="titleOne=false" [class.d-none]="titleOne">
+            <!-- <img src="assets/img/skills/angular.png" (mouseover)="titleOne=true" (mouseleave)="titleOne=false" [class.d-none]="titleOne">
             <div class="title-overlay d-none" [class.show]="titleOne"></div>
 
             <img src="assets/img/skills/js.png">
@@ -42,7 +42,17 @@
 
             <img src="assets/img/skills/scrum.png">
 
-            <img src="assets/img/skills/md.png">
+            <img src="assets/img/skills/md.png"> -->
+
+            <div *ngFor=" let image of firstRow; let i = index">
+                <img src="{{image.source}}" (mouseover)="showTitle(i)" (mouseleave)="showImg()" [class.d-none]="hoveredIndex === i">
+                <div class="title-overlay d-none" [class.show]="hoveredIndex === i">{{image.title}}</div>
+            </div>
+
+            <!-- <div *ngFor=" let image of firstRow; let i = index">
+                <img src="{{image.source}}">
+                <div class="title-overlay">{{image.name}}</div>
+            </div> -->
         </div>
 
         <div class="img-container">

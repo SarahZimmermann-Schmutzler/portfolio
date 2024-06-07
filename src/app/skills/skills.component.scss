@@ -389,7 +389,7 @@
     align-items: center;
     // height: 50%;
     // width: 100%;
-    background-color: yellowgreen;
+    // background-color: yellowgreen;
     margin-bottom: 40px;
     margin-top: 30px;
 
@@ -414,19 +414,14 @@
     width: 100px;
     height: 100px;
     background-color: aqua;
-    transition: .5s ease;
-    opacity: 1;
-
-    &:hover {
-        opacity: 1;
-    }
+    // display: none;
     
 }
 
 .d-none {
-    display: none !important;
+    display: none;
 }
 
 .show {
-    display: flex !important;
+    display: flex;
 }
