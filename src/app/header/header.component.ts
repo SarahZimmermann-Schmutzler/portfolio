@@ -7,7 +7,7 @@ import {TranslateService} from '@ngx-translate/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  border = true;
+  border = false;
 
 
   constructor(public translation: TranslateService) {
