@@ -4,7 +4,7 @@
 
 
 <div class="project-container">
-    <img src="assets/img/projects/videoflix.png">
+    <img src="assets/img/projects/videoflix.png" (mouseover)="borderVideoflix=true" (mouseleave)="borderVideoflix=false">
     <div class="description">
         <h3>VIDEOFLIX</h3>
         <span class="highlight">
@@ -38,12 +38,12 @@
             <button (click)="gitKenben()">GITHUB</button>
         </div>
     </div>
-    <img src="assets/img/projects/join.png">
+    <img src="assets/img/projects/kenben.png" (mouseover)="borderKenben=true" (mouseleave)="borderKenben=false">
 </div>
 
 
 <div class="project-container">
-    <img src="assets/img/projects/slack.png">
+    <img src="assets/img/projects/slack.png" (mouseover)="borderSlack=true" (mouseleave)="borderSlack=false">
     <div class="description">
         <h3>MySlack</h3>
         <span class="highlight">
@@ -60,5 +60,9 @@
         </div>
     </div>
 </div>
+
+<!-- <div [class.borderV]="borderVideoflix"></div>
+<div [class.borderK]="borderKenben"></div>
+<div [class.borderS]="borderSlack"></div> -->
 
 

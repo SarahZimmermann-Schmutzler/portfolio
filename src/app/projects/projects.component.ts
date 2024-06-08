@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent {
+  borderVideoflix = false; 
+  borderKenben = false; 
+  borderSlack = false; 
+
   gitSlack() {
     window.open('https://github.com/SarahZimmermann-Schmutzler/MySlack', '_blank');
   }
