@@ -56,14 +56,19 @@
         </div>
 
         <div class="img-container">
-            <img src="assets/img/skills/py.png">
+            <div *ngFor=" let image of secondRow; let i = index">
+                <img src="{{image.source}}" (mouseover)="showTitleSec(i)" (mouseleave)="showImg()" [class.d-none]="hoveredIndexSec === i">
+                <div class="title-overlay d-none" [class.show]="hoveredIndexSec === i">{{image.title}}</div>
+            </div>
+
+            <!-- <img src="assets/img/skills/py.png">
             <img src="assets/img/skills/dj.png">
             <img src="assets/img/skills/dr.png">
             <img src="assets/img/skills/cloud.png">
             <img src="assets/img/skills/sql.png">
             <img src="assets/img/skills/postgresql.png">
             <img src="assets/img/skills/firebase.png">
-            <img src="assets/img/skills/redis.png">
+            <img src="assets/img/skills/redis.png"> -->
         </div>
     </div>
 </div>

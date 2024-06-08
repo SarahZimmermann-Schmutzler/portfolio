@@ -1,7 +1,19 @@
 .title {
-    padding-left: 115px; 
+    margin-left: 115px; 
+    margin-right: 115px;
     margin-top: 80px;  
     margin-bottom: 90px;
+    font-size: 54px;
+    font-weight: bold;
+    cursor: default;
+
+    &:hover {
+        // background-color: rgba(254, 227, 131, 1);
+        // padding-left: 10px;
+        // color: #f4f1e8;
+        color: rgba(254, 227, 131, 1);
+    }
+
 
     @media (max-width: 1280px) {
         margin-top: 80px;
@@ -35,6 +47,7 @@
         width: 620px;
         height: 390px;
         object-fit: contain;
+        filter: grayscale(100%);
 
         @media (max-width: 1280px) {
             width: 500px;
@@ -52,6 +65,11 @@
         color: rgba(0, 0, 0, 1);
         margin-bottom: 50px !important;
         margin: 0;
+        cursor: default;
+
+        &:hover {
+            color: rgba(254, 227, 131, 1);
+        }
 
         @media (max-width: 1280px) {
             margin-bottom: 30px !important;
@@ -74,8 +92,10 @@
 }
 
 .highlight {
-    background-color: rgba(0, 0, 0, 1);
-    color: rgba(254, 227, 131, 1) !important;
+    background-color: white;
+    border: 1px solid rgba(254, 227, 131, 1);
+    // background-color: rgba(0, 0, 0, 1);
+    // color: rgba(254, 227, 131, 1) !important;
     padding: 10px;
     max-width: max-content;
     
