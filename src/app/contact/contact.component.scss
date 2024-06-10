@@ -33,19 +33,22 @@
         height: auto;
 
         overflow: hidden; 
-        // border-right: .15em solid orange;
+        border-right: .15em solid black;
         // für letzte Zeile im html style code
         white-space: nowrap; 
         margin: 0 auto; 
-        letter-spacing: .15em; 
+        // letter-spacing: .15em; 
         visibility: hidden;
     }
-
 }
 
 .animation {
     animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
     visibility: visible !important;
+}
+
+.border-away {
+    border-right: none !important;
 }
 
 

@@ -1,14 +1,14 @@
 <div class="contact-container" id="contact" (mouseover)="startAnimation()">
     <div class="text-container">
         <h2 translate>Kontakt</h2>
-        <div class="animation-container"><div translate [class.animation]="animationFirstRow">Sie haben ein Programmier-Problem, das gelöst werden muss?</div></div>
+        <div class="animation-container"><div translate [class.animation]="animationFirstRow" [class.border-away]="animationSecRow">Sie haben ein Programmier-Problem?</div></div>
         <br>
         <br>
-        <div class="animation-container"><div translate [class.animation]="animationSecRow">Jetzt, da Sie meine Arbeit ein wenig kennengelernt haben,</div></div>
+        <div class="animation-container"><div translate [class.animation]="animationSecRow" [class.border-away]="animationThirdRow">Jetzt, da Sie meine Arbeit ein wenig</div></div>
         <br>
-        <div class="animation-container"><div translate [class.animation]="animationThirdRow">lassen Sie mich wissen,</div></div>
+        <div class="animation-container"><div translate [class.animation]="animationThirdRow" [class.border-away]="animationFourthRow">kennengelernt haben, lassen Sie mich wissen,</div></div>
         <br>
-        <div class="animation-container"><div translate [class.animation]="animationFourthRow" style="border-right: .15em solid black; ">wie ich Ihnen behilflich sein kann.</div></div>
+        <div class="animation-container"><div translate [class.animation]="animationFourthRow">wie ich Ihnen behilflich sein kann.</div></div>
     </div>
 
     <div class="form-container">
