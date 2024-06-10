@@ -1,21 +1,25 @@
-<div class="contact-container" id="contact">
+<div class="contact-container" id="contact" (mouseover)="startAnimation()">
     <div class="text-container">
         <h2 translate>Kontakt</h2>
-        <span translate>Sie haben ein Programmier-Problem, das gelöst werden muss?</span>
+        <div class="animation-container"><div translate [class.animation]="animationFirstRow">Sie haben ein Programmier-Problem, das gelöst werden muss?</div></div>
         <br>
         <br>
-        <span translate>Jetzt, da Sie meine Arbeit ein wenig kennengelernt haben, lassen Sie mich wissen, wie ich Ihnen helfen kann.</span>
+        <div class="animation-container"><div translate [class.animation]="animationSecRow">Jetzt, da Sie meine Arbeit ein wenig kennengelernt haben,</div></div>
+        <br>
+        <div class="animation-container"><div translate [class.animation]="animationThirdRow">lassen Sie mich wissen,</div></div>
+        <br>
+        <div class="animation-container"><div translate [class.animation]="animationFourthRow" style="border-right: .15em solid black; ">wie ich Ihnen behilflich sein kann.</div></div>
     </div>
 
     <div class="form-container">
         <form (ngSubmit)="sendMail()">
             <span>Name</span>
-            <input type="text" name="name" [(ngModel)]="contactData.name" >
+            <input type="text" name="name" [(ngModel)]="contactData.name" autocomplete="off">
             <span>Email</span>
-            <input type="email" name="email" [(ngModel)]="contactData.email">
+            <input type="email" name="email" [(ngModel)]="contactData.email" autocomplete="off">
             <span translate>Nachricht</span>
             <textarea type="text" name="message" [(ngModel)]="contactData.message"></textarea>
-            <button [disabled]="disabled" [class.disabled-btn]="disabled" translate>LOS GEHT'S</button>
+            <button [disabled]="disabled" [class.disabled-btn]="disabled" [class.no-hover]="disabled" translate>LOS GEHT'S</button>
         </form>
     </div>
 </div>

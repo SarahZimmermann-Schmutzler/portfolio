@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, QueryList, Renderer2, ViewChildren } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
@@ -25,13 +25,35 @@ export class ContactComponent {
       },
     },
   };
+  animationFirstRow = false;
+  animationSecRow = false;
+  animationThirdRow = false;
+  animationFourthRow = false;
+  // @ViewChildren('typewriter') typewriterElements: QueryList<ElementRef>;
 
 
-  constructor(public http: HttpClient) {}
+  constructor(public http: HttpClient, private renderer: Renderer2) {}
 
   ngOnInit() {
     this.watchForm();
   }
+
+  startAnimation() {
+    this.animationFirstRow = true;
+    
+    setTimeout(() => {
+      this.animationSecRow = true;
+    }, 5000);
+
+    setTimeout(() => {
+      this.animationThirdRow = true;
+    }, 10000);
+
+    setTimeout(() => {
+      this.animationFourthRow = true;
+    }, 15000);
+  }
+
 
   watchForm() {
     setInterval(() => {
@@ -71,4 +93,6 @@ export class ContactComponent {
       this.contactData.message = '';
     }
   }
+
+
 }

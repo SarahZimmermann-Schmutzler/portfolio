@@ -13,12 +13,50 @@
     padding-top: 30px;
     padding-right: 150px;
     box-sizing: border-box;
+    
+    h2 {
+        cursor: default;
 
-    span {
+        &:hover {
+            color: #f4f1e8;
+        }
+    }
+}
+
+.animation-container {
+    width: fit-content;
+
+    div {
         font-weight: 400;
         font-size: 18px;
         color: rgba(46, 46, 46, 1);
+        height: auto;
+
+        overflow: hidden; 
+        // border-right: .15em solid orange;
+        // für letzte Zeile im html style code
+        white-space: nowrap; 
+        margin: 0 auto; 
+        letter-spacing: .15em; 
+        visibility: hidden;
     }
+
+}
+
+.animation {
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    visibility: visible !important;
+}
+
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
 }
 
 .form-container {
@@ -26,7 +64,7 @@
     padding-top: 80px;
     box-sizing: border-box;
 
-    
+
 
     form {
         display: flex;
@@ -47,7 +85,7 @@
             &:focus {
                 outline: unset;
                 border: unset;
-                background-color: white;
+                background-color: white !important;
             }
         }
 
@@ -67,7 +105,7 @@
         button {
             padding: 24px 33px;
             gap: 10px;
-            color: rgba(255, 255, 255, 1);
+            color: rgba(254, 227, 131, 1);
             background-color: rgba(15, 15, 16, 1);
             border: none;
             font-family: 'Sen';
@@ -76,10 +114,6 @@
             cursor: pointer;
 
             &:hover {
-                // color: black;
-                // background-color: rgba(254, 227, 131, 1);
-                // outline: 2px solid white;
-                color:rgba(254, 227, 131, 1);
                 font-size: 20px;
             }
         }
@@ -88,20 +122,18 @@
 
 .disabled-btn {
     cursor: default !important;
-    color: rgba(15, 15, 16, 1) !important;
+    color: rgba(138, 138, 138, 0.2) !important;
+}
 
-    &:hover {
-        // color: rgba(15, 15, 16, 1) !important;
-        // font-size: 16px;
-        pointer-events: none;
-    }
+.no-hover {
+    pointer-events: none;
 }
 
 .send-container {
     position: relative;
     width: 100%;
     height: 730px;
-    background-color:rgba(254, 227, 131, 1);
+    background-color: rgba(254, 227, 131, 1);
     margin-top: -730px;
     display: flex;
     justify-content: center;
@@ -116,10 +148,6 @@
         50% {
             opacity: 1;
         }
-
-        // 100% {
-        //     opacity: 0;
-        // }
     }
 }
 
