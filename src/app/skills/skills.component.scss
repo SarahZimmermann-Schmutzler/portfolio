@@ -4,28 +4,12 @@
     height: 630px;
     display: flex;
     flex-direction: column;
-    // background-color: yellow;
-
-    // @media (max-width: 1330px) {
-    //     height: 570px;
-    // }
-
-
 }
 
 .title-container {
     height: 25%;
-    // background-color: green;
-    // padding-left: 115px;
-    // padding-right: 115px;
     display: flex;
     align-items: center;
-
-    // &:hover {
-    //     background-color: #FFFCF3;
-    //     padding-left: 10px;
-    //     color: rgba(254, 227, 131, 1);
-    // }
 
     div {
         padding-left: 115px;
@@ -35,9 +19,6 @@
         width: 100%;
 
         &:hover {
-            // background-color: #FFFCF3;
-            // padding-left: 125px;
-            // color: rgba(254, 227, 131, 1);
             color: #FFFCF3;
         }
     }
@@ -59,49 +40,18 @@
 }
 
 .skills-container {
-    // margin-top: 60px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    // flex-wrap: wrap;
     padding-left: 300px;
     padding-right: 300px;
-    // background-color: aqua;
     height: 75%;
 
     @media (max-width: 1375px) {
         padding-left: 115px;
         padding-right: 115px;
     }
-
-    // div {
-    //     width: 100%;
-    //     display: flex;
-    //     justify-content: space-between;
-    //     align-items: center;
-    //     // height: 50%;
-    //     // width: 100%;
-    //     background-color: yellowgreen;
-    //     margin-bottom: 40px;
-    //     margin-top: 30px;
-
-    //     img {
-    //         width: 100px;
-    //         height: 100px;
-    //         object-fit: contain;
-
-    //         &:hover {
-    //             transform: scale(1.2);
-    //         }
-
-    //         @media (max-width: 1375px) {
-    //             width: 80px;
-    //             height: 80px;
-    //             object-fit: contain;
-    //         }
-    //     }
-    // }
 }
 
 .img-container {
@@ -109,11 +59,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // height: 50%;
-    // width: 100%;
-    // background-color: yellowgreen;
     margin-bottom: 40px;
     margin-top: 30px;
+    cursor: default;
 
     img {
         width: 100px;
@@ -136,7 +84,6 @@
     width: 100px;
     height: 100px;
     background-color: #FFFCF3;
-    // display: none;
     display: flex;
     justify-content: center;
     align-items: center;

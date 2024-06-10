@@ -44,8 +44,8 @@
 
             <img src="assets/img/skills/md.png"> -->
 
-            <div *ngFor=" let image of firstRow; let i = index">
-                <img src="{{image.source}}" (mouseover)="showTitle(i)" (mouseleave)="showImg()" [class.d-none]="hoveredIndex === i">
+            <div *ngFor=" let image of firstRow; let i = index" (mouseover)="showTitle(i)" (mouseleave)="showImg()">
+                <img src="{{image.source}}" [class.d-none]="hoveredIndex === i">
                 <div class="title-overlay d-none" [class.show]="hoveredIndex === i">{{image.title}}</div>
             </div>
 
@@ -56,8 +56,8 @@
         </div>
 
         <div class="img-container">
-            <div *ngFor=" let image of secondRow; let i = index">
-                <img src="{{image.source}}" (mouseover)="showTitleSec(i)" (mouseleave)="showImg()" [class.d-none]="hoveredIndexSec === i">
+            <div *ngFor=" let image of secondRow; let i = index" (mouseover)="showTitleSec(i)" (mouseleave)="showImg()">
+                <img src="{{image.source}}" [class.d-none]="hoveredIndexSec === i">
                 <div class="title-overlay d-none" [class.show]="hoveredIndexSec === i">{{image.title}}</div>
             </div>
 

@@ -19,7 +19,7 @@ export class ProjectsComponent {
   }
 
   gitKenben() {
-    window.open('https://github.com/SarahZimmermann-Schmutzler/kenben_frontend', '_blank');
+    window.open('https://github.com/SarahZimmermann-Schmutzler/kenben', '_blank');
   }
 
   serverSlack() {

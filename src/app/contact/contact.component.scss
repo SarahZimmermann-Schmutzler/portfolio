@@ -34,7 +34,6 @@
 
         overflow: hidden; 
         border-right: .15em solid black;
-        // für letzte Zeile im html style code
         white-space: nowrap; 
         margin: 0 auto; 
         // letter-spacing: .15em; 
@@ -51,7 +50,6 @@
     border-right: none !important;
 }
 
-
 @keyframes typing {
     from { width: 0 }
     to { width: 100% }
@@ -66,8 +64,6 @@
     width: 45%;
     padding-top: 80px;
     box-sizing: border-box;
-
-
 
     form {
         display: flex;
