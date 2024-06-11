@@ -17,6 +17,7 @@
 
     h2 {
         margin-top: 0;
+        cursor: default;
 
         @media (max-width: 700px) {
             font-size: 46px;
@@ -24,6 +25,10 @@
 
         @media (max-width: 436px) {
             font-size: 32px;
+        }
+
+        &:hover {
+            color: rgba(254, 227, 131, 1);
         }
     }
 }

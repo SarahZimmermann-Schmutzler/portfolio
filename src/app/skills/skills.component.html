@@ -3,56 +3,14 @@
         <div translate>Fähigkeiten 
             <span translate>Ich durfte bereits mit vielen Konzepten Erfahrungen sammeln.</span>
         </div>
-        <!-- <h2 translate>Fähigkeiten</h2>
-        <span translate>Ich durfte bereits mit vielen Konzepten Erfahrungen sammeln.</span> -->
     </div>
-
-    <!-- <div class="skills-container">
-        <img src="assets/img/skills/angular.png">
-        <img src="assets/img/skills/ts.png">
-        <img src="assets/img/skills/js.png">
-        <img src="assets/img/skills/html.png">
-        <img src="assets/img/skills/scrum.png">
-        <img src="assets/img/skills/firebase.png">
-        <img src="assets/img/skills/git.png">
-        <img src="assets/img/skills/css.png">
-        <img src="assets/img/skills/api.png">
-        <img src="assets/img/skills/md.png">
-    </div> -->
 
     <div class="skills-container">
         <div class="img-container">
-            <!-- <div *ngFor=" let image of firstRow; let i = index">
-                <img src="{{image.source}}" (mouseover)="title{i}=true" [class.d-none]="title{i}">
-                <div class="title-overlay d-none"></div>
-            </div> -->
-            
-            <!-- <img src="assets/img/skills/angular.png" (mouseover)="titleOne=true" (mouseleave)="titleOne=false" [class.d-none]="titleOne">
-            <div class="title-overlay d-none" [class.show]="titleOne"></div>
-
-            <img src="assets/img/skills/js.png">
-
-            <img src="assets/img/skills/css.png">
-            
-            <img src="assets/img/skills/html.png">
-
-            <img src="assets/img/skills/chatgpt.png">
-
-            <img src="assets/img/skills/git.png">
-
-            <img src="assets/img/skills/scrum.png">
-
-            <img src="assets/img/skills/md.png"> -->
-
             <div *ngFor=" let image of firstRow; let i = index" (mouseover)="showTitle(i)" (mouseleave)="showImg()">
                 <img src="{{image.source}}" [class.d-none]="hoveredIndex === i">
                 <div class="title-overlay d-none" [class.show]="hoveredIndex === i">{{image.title}}</div>
             </div>
-
-            <!-- <div *ngFor=" let image of firstRow; let i = index">
-                <img src="{{image.source}}">
-                <div class="title-overlay">{{image.name}}</div>
-            </div> -->
         </div>
 
         <div class="img-container">
@@ -60,15 +18,6 @@
                 <img src="{{image.source}}" [class.d-none]="hoveredIndexSec === i">
                 <div class="title-overlay d-none" [class.show]="hoveredIndexSec === i">{{image.title}}</div>
             </div>
-
-            <!-- <img src="assets/img/skills/py.png">
-            <img src="assets/img/skills/dj.png">
-            <img src="assets/img/skills/dr.png">
-            <img src="assets/img/skills/cloud.png">
-            <img src="assets/img/skills/sql.png">
-            <img src="assets/img/skills/postgresql.png">
-            <img src="assets/img/skills/firebase.png">
-            <img src="assets/img/skills/redis.png"> -->
         </div>
     </div>
 </div>

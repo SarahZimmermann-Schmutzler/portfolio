@@ -3,7 +3,7 @@
     <span class="subtitle" translate>Ich durfte bereits mit vielen Konzepten Erfahrungen sammeln.</span>
 
     <div class="skills-container">
-        <img src="assets/img/skills/angular.png">
+        <!-- <img src="assets/img/skills/angular.png">
         <img src="assets/img/skills/ts.png">
         <img src="assets/img/skills/js.png">
         <img src="assets/img/skills/html.png">
@@ -12,6 +12,20 @@
         <img src="assets/img/skills/git.png">
         <img src="assets/img/skills/css.png">
         <img src="assets/img/skills/api.png">
-        <img src="assets/img/skills/md.png">
+        <img src="assets/img/skills/md.png"> -->
+
+        <div class="img-container">
+            <div *ngFor=" let image of firstRow; let i = index" (mouseover)="showTitle(i)" (mouseleave)="showImg()">
+                <img src="{{image.source}}" [class.d-none]="hoveredIndex === i">
+                <div class="title-overlay d-none" [class.show]="hoveredIndex === i">{{image.title}}</div>
+            </div>
+        </div>
+
+        <div class="img-container">
+            <div *ngFor=" let image of secondRow; let i = index" (mouseover)="showTitleSec(i)" (mouseleave)="showImg()">
+                <img src="{{image.source}}" [class.d-none]="hoveredIndexSec === i">
+                <div class="title-overlay d-none" [class.show]="hoveredIndexSec === i">{{image.title}}</div>
+            </div>
+        </div>
     </div>
 </div>

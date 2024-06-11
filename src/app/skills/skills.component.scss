@@ -68,10 +68,6 @@
         height: 100px;
         object-fit: contain;
 
-        &:hover {
-            transform: scale(1.2);
-        }
-
         @media (max-width: 1375px) {
             width: 80px;
             height: 80px;

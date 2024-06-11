@@ -1,6 +1,6 @@
 <div class="header-container">
     <img src="assets/img/logo2.png">
-    <img src="assets/img/menu.png" (click)="showMenu()">
+    <img style="cursor: pointer;" src="assets/img/menu.png" (click)="showMenu()">
     <!-- setzt Variable openMenu auf true -->
 </div>
 
@@ -22,8 +22,8 @@
     </div>
 
     <div class="language">
-        <a (click)="translation.use('de')">DE</a>
+        <div class="lang-link-de"><a (click)="translation.use('de')">DE</a></div>
         <span>|</span>
-        <a (click)="translation.use('en')">EN</a>
+        <div class="lang-link-eng"><a (click)="translation.use('en')">EN</a></div>
     </div>
 </div>
