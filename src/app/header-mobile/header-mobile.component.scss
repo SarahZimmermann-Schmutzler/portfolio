@@ -15,31 +15,47 @@
         padding-right: 20px;
         padding-left: 50px;
     }
+}
 
-    img {
+.img-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+
+    @media (max-width: 700px) {
+        width: 70px;
+        height: 70px;
+    }
+
+    @media (max-width: 436px) {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.img-menu {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    cursor: pointer;
+
+    @media (max-width: 700px) {
         width: 50px;
         height: 50px;
-        object-fit: contain;
+    }
 
-        @media (max-width: 700px) {
-            width: 40px;
-            height: 40px;
-        }
-
-        @media (max-width: 436px) {
-            width: 30px;
-            height: 30px;
-        }
+    @media (max-width: 436px) {
+        width: 40px;
+        height: 40px;
     }
 }
 
 .menu-container {
-    position:absolute;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 100vh;
-    // height: 6795px;
     display: flex;
     flex-direction: column;
     background-color: #FFFCF3;
@@ -59,12 +75,11 @@
     align-items: center;
     padding-right: 80px;
     padding-left: 80px;
-    margin-top: 25px;
+    margin-top: 20px;
 
     @media (max-width: 700px) {
         padding-right: 50px;
         padding-left: 50px;
-        margin-top: 46px;
     }
 
     @media (max-width: 436px) {
@@ -73,18 +88,15 @@
     }
 
     img {
-        height: 85px;
         width: 80px;
         object-fit: contain;
 
         @media (max-width: 700px) {
-            height: 65px;
-            width: 60px;
+            width: 50px;
         }
 
         @media (max-width: 700px) {
-            height: 45px;
-            width: 40px;
+            width: 50px;
         }
     }
 
@@ -156,7 +168,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    
+
     span {
         padding-left: 8px;
         padding-right: 8px;
@@ -168,7 +180,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    
+
     a {
         font-size: 18px;
         padding: 2px 5px 2px 5px;
