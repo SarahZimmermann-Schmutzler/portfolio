@@ -38,8 +38,8 @@
     top: 0;
     left: 0;
     right: 0;
-    // height: 100vh;
-    height: 6795px;
+    height: 100vh;
+    // height: 6795px;
     display: flex;
     flex-direction: column;
     background-color: #FFFCF3;
@@ -117,7 +117,6 @@
     justify-content: center;
     padding-left: 80px;
     padding-right: 80px;
-    margin-top: 200px;
     transition: .5s ease;
 
     @media (max-width: 700px) {
