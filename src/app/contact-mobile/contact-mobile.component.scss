@@ -24,6 +24,8 @@
 
     h2 {
         margin-top: 30px;
+        cursor: default;
+
 
         @media (max-width: 700px) {
             font-size: 46px;
@@ -31,6 +33,10 @@
     
         @media (max-width: 436px) {
             font-size: 32px;
+        }
+
+        &:hover {
+            color: #f4f1e8;
         }
     }
 
@@ -105,10 +111,6 @@
             cursor: pointer;
 
             &:hover {
-                // color: black;
-                // background-color: rgba(254, 227, 131, 1);
-                // outline: 2px solid white;
-                color: rgba(254, 227, 131, 1);
                 font-size: 20px;
             }
         }
@@ -117,13 +119,11 @@
 
 .disabled-btn {
     cursor: default !important;
-    color: rgba(15, 15, 16, 1) !important;
+    color: rgba(138, 138, 138, 0.2) !important;
+}
 
-    &:hover {
-        // color: rgba(15, 15, 16, 1) !important;
-        // font-size: 16px;
-        pointer-events: none;
-    }
+.no-hover {
+    pointer-events: none;
 }
 
 .send-container {

@@ -1,18 +1,18 @@
 <div class="footer-container">
-    <div>
-        <a routerLink="/imprint" target="_blank" translate>Impressum</a>
+    <div class="legal-container">
+        <div class="imprint"><a routerLink="/imprint" target="_blank" translate>Impressum</a></div>
         <span> - </span>
-        <a routerLink="/data-protection" target="_blank" translate>Datenschutz</a>
+        <div class="data"><a routerLink="/data-protection" target="_blank" translate>Datenschutz</a></div>
     </div>
 
-    <div>
+    <div class="legal-container">
         <span>Sarah Zimmermann-Schmutzler &#183; </span>
         <span>2024</span>
     </div>
 
     <div class="language">
-        <a (click)="translation.use('de')">DE</a>
+        <div class="lang-link-de"><a (click)="translation.use('de')">DE</a></div>
         <span>|</span>
-        <a (click)="translation.use('en')">EN</a>
+        <div class="lang-link-de"><a (click)="translation.use('en')">EN</a></div>
     </div>
 </div>

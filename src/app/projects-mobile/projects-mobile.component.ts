@@ -9,7 +9,7 @@ export class ProjectsMobileComponent {
 
   projects = [
     {
-      'image': 'pollo.png',
+      'image': 'videoflix1.png',
       'title': 'VIDEOFLIX',
       'langsF': 'Angular | JavaScript | HTML | SCSS',
       'langsB': 'Python | Django | Django REST framework',
@@ -19,7 +19,7 @@ export class ProjectsMobileComponent {
     },
 
     {
-      'image': 'join.png',
+      'image': 'kenben1.png',
       'title': 'KenBen',
       'langsF': 'Angular | JavaScript | HTML | SCSS',
       'langsB': 'Python | Django | Django REST framework',

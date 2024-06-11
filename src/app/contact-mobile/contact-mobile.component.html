@@ -10,12 +10,12 @@
     <div class="form-container">
         <form (ngSubmit)="sendMail()">
             <span>Name</span>
-            <input type="text" name="name" [(ngModel)]="contactData.name" >
+            <input type="text" name="name" [(ngModel)]="contactData.name" autocomplete="off">
             <span>Email</span>
-            <input type="email" name="email" [(ngModel)]="contactData.email">
+            <input type="email" name="email" [(ngModel)]="contactData.email" autocomplete="off">
             <span translate>Nachricht</span>
             <textarea type="text" name="message" [(ngModel)]="contactData.message"></textarea>
-            <button [disabled]="disabled" [class.disabled-btn]="disabled" translate>LOS GEHT'S</button>
+            <button [disabled]="disabled" [class.disabled-btn]="disabled" [class.no-hover]="disabled"s translate>LOS GEHT'S</button>
         </form>
     </div>
 </div>

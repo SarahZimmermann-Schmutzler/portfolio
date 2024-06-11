@@ -156,3 +156,14 @@ h2 {
     display: none;
   }
 }
+
+::-webkit-scrollbar {
+  // background: black;
+  background: rgba(254, 227, 131, 1);
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  // background: rgba(255,255,255,0.15);
+  background: #FFFCF3;
+}
