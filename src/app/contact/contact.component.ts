@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { AfterViewInit, Component, ElementRef, QueryList, Renderer2, ViewChildren } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
@@ -29,10 +29,9 @@ export class ContactComponent {
   animationSecRow = false;
   animationThirdRow = false;
   animationFourthRow = false;
-  // @ViewChildren('typewriter') typewriterElements: QueryList<ElementRef>;
 
 
-  constructor(public http: HttpClient, private renderer: Renderer2) {}
+  constructor(public http: HttpClient) {}
 
   ngOnInit() {
     this.watchForm();
@@ -93,6 +92,4 @@ export class ContactComponent {
       this.contactData.message = '';
     }
   }
-
-
 }

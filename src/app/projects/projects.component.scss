@@ -8,9 +8,6 @@
     cursor: default;
 
     &:hover {
-        // background-color: rgba(254, 227, 131, 1);
-        // padding-left: 10px;
-        // color: #f4f1e8;
         color: rgba(254, 227, 131, 1);
     }
 
@@ -99,8 +96,6 @@
 .highlight {
     background-color: white;
     border: 1px solid rgba(254, 227, 131, 1);
-    // background-color: rgba(0, 0, 0, 1);
-    // color: rgba(254, 227, 131, 1) !important;
     padding: 10px;
     max-width: max-content;
     
@@ -149,30 +144,3 @@
         }
     }
 }
-
-// .borderV {
-//     border: 2px solid black;
-//     position: absolute;
-//     top: 2607px;
-//     left: 130px;
-//     width: 500px;
-//     height: 310px;
-// }
-
-// .borderK {
-//     border: 2px solid black;
-//     position: absolute;
-//     top: 3069px;
-//     right: 129px;
-//     width: 500px;
-//     height: 356px;
-// }
-
-// .borderS {
-//     border: 2px solid black;
-//     position: absolute;
-//     top: 3579px;
-//     left: 127px;
-//     width: 500px;
-//     height: 301px;
-// }

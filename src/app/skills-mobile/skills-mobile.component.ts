@@ -108,5 +108,4 @@ export class SkillsMobileComponent {
     this.hoveredIndex = null;
     this.hoveredIndexSec = null;
   }
-
 }

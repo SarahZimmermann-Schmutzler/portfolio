@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {TranslateService} from '@ngx-translate/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -12,10 +12,10 @@ export class HeaderComponent {
 
   constructor(public translation: TranslateService) {
     // the lang to use, if the lang isn't available, it will use the current loader to get them
-   // translate.use('en');
-   // fügen das in HTML als Link ein, um Sprachen zu switchen
-}
+    // translate.use('en');
+    // fügen das in HTML als Link ein, um Sprachen zu switchen
+  }
 
-ngOnInit() {}
+  ngOnInit() { }
 
 }

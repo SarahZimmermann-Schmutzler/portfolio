@@ -27,11 +27,12 @@ export class ContactMobileComponent {
   };
 
 
-  constructor(public http: HttpClient) {}
+  constructor(public http: HttpClient) { }
 
   ngOnInit() {
     this.watchForm();
   }
+
 
   watchForm() {
     setInterval(() => {
@@ -47,6 +48,7 @@ export class ContactMobileComponent {
       }
     }, 500);
   }
+
 
   sendMail() {
     if (!this.mailTest) {

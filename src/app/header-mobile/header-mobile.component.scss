@@ -38,14 +38,14 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 100vh;
+    // height: 100vh;
+    height: 6795px;
     display: flex;
     flex-direction: column;
-    // background-color: rgba(246, 246, 246, 0.9);
     background-color: #FFFCF3;
     z-index: 3;
     transform: translateX(1100px);
-    /* verschieben auf x-achse nach rechts um 1100px (ding ist max.1090px breit)*/
+    /* verschieben auf x-achse nach rechts um 1100px (ist max.1090px breit)*/
     transition: all 225ms ease-in-out;
 }
 
@@ -141,7 +141,6 @@
         cursor: pointer;
         text-align: center;
         transition: .3s ease;
-
 
         &:hover {
             color: rgba(254, 227, 131, 1) !important;

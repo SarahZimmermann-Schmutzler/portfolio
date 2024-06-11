@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent {
-  // titleOne = false;
 
   hoveredIndex: number | null = null;
   hoveredIndexSec: number | null = null;

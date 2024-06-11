@@ -10,25 +10,15 @@
     height: 360px;
     margin-top: 148px;
     padding-left: 115px;
-    // background-color: white;
     display: flex;
     align-items: center;
     z-index: 1;
-
-    // @media (max-width: 1420px) {
-    //     margin-top: 107px;
-    // }
 
     @media (max-width: 1475px) {
         margin-top: 107px;
     }
 
     h2 {
-        // @media (max-width: 1420px) {
-        //     font-size: 46px;
-        //     margin-top: 115px;
-        // }
-
         @media (max-width: 1475px) {
             font-size: 46px;
             margin-top: 115px;
@@ -39,16 +29,10 @@
 .social-media-container {
     margin-top: 72px;
     width: 188px;
-    // height: 28px;
     padding-left: 115px;
     display: flex;
     justify-content: space-between;
-    // background-color: yellow;
     z-index: 1;
-
-    // @media (max-width: 1280px) {
-    //     margin-top: 45px;
-    // }
 
     @media (max-width: 1345px) {
         margin-top: 45px;
@@ -60,10 +44,8 @@
         align-items: center;
         width: 45px;
         height: 25px;
-        // background-color: black;
 
         a {
-            // height: 20px;
             font-weight: 500;
             letter-spacing: 6.33px;
             text-decoration: none;
@@ -71,22 +53,12 @@
             cursor: pointer;
             padding: 2px 5px 2px 8px;
             transition: .5s ease;
-            // background-color: aqua;
-
-            // @media (max-width: 1420px) {
-            //     font-size: 14px;
-            // }
 
             @media (max-width: 1475px) {
                 font-size: 14px;
             }
 
             &:hover {
-                // color: rgba(254, 227, 131, 1) !important;
-                // background-color: black;
-                // padding-top: 2px;
-                // padding-bottom: 2px;
-
                 border: 1px solid rgba(254, 227, 131, 1);
                 background-color: white;
             }
@@ -96,8 +68,6 @@
             }
         }
     }
-
-
 }
 
 .btn-container {
@@ -108,17 +78,9 @@
     display: flex;
     align-items: center;
 
-    // @media (max-width: 1420px) {
-    //     height: 80px;
-    // }
-
     @media (max-width: 1475px) {
         height: 80px;
     }
-
-    // @media (max-width: 1280px) {
-    //     margin-top: 30px;
-    // }
 
     @media (max-width: 1345px) {
         margin-top: 30px;
@@ -135,15 +97,6 @@
         font-weight: 500;
         letter-spacing: 8.3px;
         cursor: pointer;
-
-        // @media (max-width: 1420px) {
-        //     width: 315px;
-        //     font-size: 18px;
-        //     padding: 25px;
-        //     font-weight: 600;
-        //     letter-spacing: 4px;
-        //     height: 80px;
-        // }
 
         @media (max-width: 1475px) {
             width: 315px;
