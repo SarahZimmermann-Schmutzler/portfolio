@@ -155,13 +155,13 @@ h2 {
   .hide-mobile {
     display: none;
   }
+
+  ::-webkit-scrollbar {
+    background: rgba(254, 227, 131, 1);
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #FFFCF3;
+  }
 }
-
-// ::-webkit-scrollbar {
-//   background: rgba(254, 227, 131, 1);
-//   width: 10px;
-// }
-
-// ::-webkit-scrollbar-thumb {
-//   background: #FFFCF3;
-// }
